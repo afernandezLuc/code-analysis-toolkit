@@ -1,0 +1,18 @@
+scan-build: Using '/usr/lib/llvm-18/bin/clang' for static analysis
+[ 10%] Building C object CMakeFiles/project_core.dir/src/math_utils.c.o
+[ 20%] Building C object CMakeFiles/project_core.dir/src/string_utils.c.o
+[ 30%] Building C object CMakeFiles/project_core.dir/src/platform.c.o
+[ 40%] Linking C static library libproject_core.a
+[ 40%] Built target project_core
+[ 50%] Building C object CMakeFiles/app_demo.dir/src/main.c.o
+[ 60%] Linking C executable app_demo
+[ 60%] Built target app_demo
+[ 70%] Building C object CMakeFiles/test_math.dir/tests/test_math.c.o
+[ 80%] Linking C executable test_math
+[ 80%] Built target test_math
+[ 90%] Building C object CMakeFiles/test_string.dir/tests/test_string.c.o
+[100%] Linking C executable test_string
+[100%] Built target test_string
+scan-build: Analysis run complete.
+scan-build: Removing directory '/home/alejandro/repos/code-analysis-toolkit/projectExample/code_analysis_result/scan-build/2026-03-17-220823-123685-1' because it contains no reports.
+scan-build: No bugs found.

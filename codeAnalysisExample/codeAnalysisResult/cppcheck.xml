@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/include/math_utils.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/include/math_utils.h" line="5" column="0"/>
+        </error>
+        <error id="misra-c2012-11.4" severity="style" msg="A conversion should not be performed between a pointer to object and an integer type\011" verbose="A conversion should not be performed between a pointer to object and an integer type\011" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/math_utils.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/math_utils.c" line="8" column="20"/>
+        </error>
+        <error id="misra-c2012-11.4" severity="style" msg="A conversion should not be performed between a pointer to object and an integer type\011" verbose="A conversion should not be performed between a pointer to object and an integer type\011" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/math_utils.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/math_utils.c" line="26" column="20"/>
+        </error>
+        <error id="misra-c2012-11.4" severity="style" msg="A conversion should not be performed between a pointer to object and an integer type\011" verbose="A conversion should not be performed between a pointer to object and an integer type\011" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/math_utils.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/math_utils.c" line="49" column="20"/>
+        </error>
+        <error id="misra-c2012-15.5" severity="style" msg="A function should have a single point of exit at the end\011" verbose="A function should have a single point of exit at the end\011" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/math_utils.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/math_utils.c" line="10" column="9"/>
+        </error>
+        <error id="misra-c2012-15.5" severity="style" msg="A function should have a single point of exit at the end\011" verbose="A function should have a single point of exit at the end\011" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/math_utils.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/math_utils.c" line="28" column="9"/>
+        </error>
+        <error id="misra-c2012-15.5" severity="style" msg="A function should have a single point of exit at the end\011" verbose="A function should have a single point of exit at the end\011" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/math_utils.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/math_utils.c" line="51" column="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/include/string_utils.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/include/string_utils.h" line="5" column="0"/>
+        </error>
+        <error id="misra-c2012-11.4" severity="style" msg="A conversion should not be performed between a pointer to object and an integer type\011" verbose="A conversion should not be performed between a pointer to object and an integer type\011" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/string_utils.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/string_utils.c" line="7" column="25"/>
+        </error>
+        <error id="misra-c2012-11.4" severity="style" msg="A conversion should not be performed between a pointer to object and an integer type\011" verbose="A conversion should not be performed between a pointer to object and an integer type\011" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/string_utils.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/string_utils.c" line="33" column="18"/>
+        </error>
+        <error id="misra-c2012-15.5" severity="style" msg="A function should have a single point of exit at the end\011" verbose="A function should have a single point of exit at the end\011" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/string_utils.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/string_utils.c" line="9" column="9"/>
+        </error>
+        <error id="misra-c2012-15.5" severity="style" msg="A function should have a single point of exit at the end\011" verbose="A function should have a single point of exit at the end\011" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/string_utils.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/string_utils.c" line="22" column="9"/>
+        </error>
+        <error id="misra-c2012-15.5" severity="style" msg="A function should have a single point of exit at the end\011" verbose="A function should have a single point of exit at the end\011" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/string_utils.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/string_utils.c" line="35" column="9"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/include/platform.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c" line="1" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c" line="2" column="0"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;values[2]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;values[2]&apos; accessed at index 5, which is out of bounds." cwe="788" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c" line="13" column="47" info="Array index out of bounds"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: ptr" verbose="Possible null pointer dereference: ptr" cwe="476" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c" line="21" column="36" info="Null pointer dereference"/>
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c" line="16" column="17" info="Assuming condition is false"/>
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c" line="10" column="16" info="Assignment &apos;ptr=0&apos;, assigned value is 0"/>
+            <symbol>ptr</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;ptr&apos; can be declared as pointer to const" verbose="Variable &apos;ptr&apos; can be declared as pointer to const" cwe="398" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c" line="10" column="10" info="Variable &apos;ptr&apos; can be declared as pointer to const"/>
+            <symbol>ptr</symbol>
+        </error>
+        <error id="misra-c2012-11.9" severity="style" msg="The macro NULL shall be the only permitted form of integer null pointer constant\011" verbose="The macro NULL shall be the only permitted form of integer null pointer constant\011" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c" line="10" column="14"/>
+        </error>
+        <error id="misra-c2012-17.7" severity="style" msg="The value returned by a function having non-void return type shall be used\011" verbose="The value returned by a function having non-void return type shall be used\011" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c" line="13" column="11"/>
+        </error>
+        <error id="misra-c2012-17.7" severity="style" msg="The value returned by a function having non-void return type shall be used\011" verbose="The value returned by a function having non-void return type shall be used\011" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c" line="21" column="11"/>
+        </error>
+        <error id="misra-c2012-21.6" severity="style" msg="The Standard Library input/output functions shall not be used\011" verbose="The Standard Library input/output functions shall not be used\011" file0="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c" line="1" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/tests/test_math.c" line="1" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/tests/test_math.c" line="2" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/tests/test_string.c" line="1" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/alejandro/repos/code-analysis-toolkit/projectExample/tests/test_string.c" line="2" column="0"/>
+        </error>
+        <error id="checkersReport" severity="information" msg="Active checkers: 113/592 (use --checkers-report=&lt;filename&gt; to see details)" verbose="Active checkers: 113/592 (use --checkers-report=&lt;filename&gt; to see details)"/>
+    </errors>
+</results>

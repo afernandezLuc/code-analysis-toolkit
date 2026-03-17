@@ -1,0 +1,80 @@
+[
+  {
+    "file": "/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c",
+    "line": 13,
+    "column": 5,
+    "severity": "warning",
+    "message": "2nd function call argument is an uninitialized value",
+    "check": "clang-analyzer-core.CallAndMessage",
+    "notes": [],
+    "code": [
+      "   13 |     printf(\"Out of bounds value: %d\\n\", values[5]);",
+      "      |     ^"
+    ]
+  },
+  {
+    "file": "/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c",
+    "line": 37,
+    "column": 5,
+    "severity": "note",
+    "message": "Calling 'demo_buggy_logic'",
+    "check": "",
+    "notes": [],
+    "code": [
+      "   37 |     demo_buggy_logic(0);",
+      "      |     ^~~~~~~~~~~~~~~~~~~"
+    ]
+  },
+  {
+    "file": "/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c",
+    "line": 13,
+    "column": 5,
+    "severity": "note",
+    "message": "2nd function call argument is an uninitialized value",
+    "check": "",
+    "notes": [],
+    "code": [
+      "   13 |     printf(\"Out of bounds value: %d\\n\", values[5]);",
+      "      |     ^                                   ~~~~~~~~~"
+    ]
+  },
+  {
+    "file": "/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c",
+    "line": 13,
+    "column": 41,
+    "severity": "warning",
+    "message": "array index 5 is past the end of the array (that has type 'int[2]')",
+    "check": "clang-diagnostic-array-bounds",
+    "notes": [],
+    "code": [
+      "   13 |     printf(\"Out of bounds value: %d\\n\", values[5]);",
+      "      |                                         ^      ~"
+    ]
+  },
+  {
+    "file": "/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c",
+    "line": 9,
+    "column": 5,
+    "severity": "note",
+    "message": "array 'values' declared here",
+    "check": "",
+    "notes": [],
+    "code": [
+      "    9 |     int values[2] = {10, 20};",
+      "      |     ^"
+    ]
+  },
+  {
+    "file": "/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c",
+    "line": 47,
+    "column": 2,
+    "severity": "warning",
+    "message": "no newline at end of file",
+    "check": "clang-diagnostic-newline-eof",
+    "notes": [],
+    "code": [
+      "   47 | }",
+      "      |  ^"
+    ]
+  }
+]

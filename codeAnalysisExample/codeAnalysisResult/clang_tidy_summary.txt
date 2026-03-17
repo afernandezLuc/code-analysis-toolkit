@@ -1,0 +1,36 @@
+1 warning generated.
+4 warnings generated.
+1 warning generated.
+warning: '__GNUC__' macro redefined [clang-diagnostic-macro-redefined]
+warning: '__GNUC__' macro redefined [clang-diagnostic-macro-redefined]
+warning: '__GNUC__' macro redefined [clang-diagnostic-macro-redefined]
+note: previous definition is here
+note: previous definition is here
+note: previous definition is here
+1 warning generated.
+/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c:13:5: warning: 2nd function call argument is an uninitialized value [clang-analyzer-core.CallAndMessage]
+   13 |     printf("Out of bounds value: %d\n", values[5]);
+      |     ^
+/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c:37:5: note: Calling 'demo_buggy_logic'
+   37 |     demo_buggy_logic(0);
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c:13:5: note: 2nd function call argument is an uninitialized value
+   13 |     printf("Out of bounds value: %d\n", values[5]);
+      |     ^                                   ~~~~~~~~~
+/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c:13:41: warning: array index 5 is past the end of the array (that has type 'int[2]') [clang-diagnostic-array-bounds]
+   13 |     printf("Out of bounds value: %d\n", values[5]);
+      |                                         ^      ~
+/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c:9:5: note: array 'values' declared here
+    9 |     int values[2] = {10, 20};
+      |     ^
+warning: '__GNUC__' macro redefined [clang-diagnostic-macro-redefined]
+note: previous definition is here
+/home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c:47:2: warning: no newline at end of file [clang-diagnostic-newline-eof]
+   47 | }
+      |  ^
+1 warning generated.
+warning: '__GNUC__' macro redefined [clang-diagnostic-macro-redefined]
+note: previous definition is here
+1 warning generated.
+warning: '__GNUC__' macro redefined [clang-diagnostic-macro-redefined]
+note: previous definition is here

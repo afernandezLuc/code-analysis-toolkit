@@ -1,0 +1,10 @@
+Internal ctest changing into directory: /home/alejandro/repos/code-analysis-toolkit/projectExample/build/coverage_auto
+Test project /home/alejandro/repos/code-analysis-toolkit/projectExample/build/coverage_auto
+    Start 1: test_math
+1/2 Test #1: test_math ........................   Passed    0.00 sec
+    Start 2: test_string
+2/2 Test #2: test_string ......................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.01 sec
