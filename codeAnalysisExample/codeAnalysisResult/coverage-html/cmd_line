@@ -1,0 +1,1 @@
+genhtml /home/alejandro/repos/code-analysis-toolkit/projectExample/code_analysis_result/coverage.info --output-directory /home/alejandro/repos/code-analysis-toolkit/projectExample/code_analysis_result/coverage-html --branch-coverage --title 'projectExample - Coverage Report'

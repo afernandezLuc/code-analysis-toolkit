@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>projectExample - Clang-Tidy Report</title>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f3f4f6;
+    color: #111827;
+}
+
+header {
+    background: #111827;
+    color: #ffffff;
+    padding: 16px 24px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+main {
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 12px 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    min-width: 140px;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 8px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: #ffffff;
+}
+
+.section {
+    margin-top: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+th, td {
+    border: 1px solid #e5e7eb;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #e5e7eb;
+}
+
+.group-row td {
+    background: #dbeafe;
+}
+
+.sev-warning {
+    background: #fef3c7;
+}
+
+.sev-error {
+    background: #fee2e2;
+}
+
+.sev-note {
+    background: #e0f2fe;
+}
+
+.notes {
+    margin-top: 8px;
+    color: #374151;
+    font-size: 0.95em;
+}
+
+pre {
+    background: #111827;
+    color: #f9fafb;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    margin-top: 8px;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>projectExample - Clang-Tidy Report</h1>
+</header>
+
+<main>
+  <div class="cards">
+    <div class="card"><strong>Total:</strong> 6</div>
+    <div class="card"><strong>Warnings:</strong> 3</div>
+    <div class="card"><strong>Errors:</strong> 0</div>
+    <div class="card"><strong>Notes:</strong> 3</div>
+    <div class="card"><strong>Files:</strong> 1</div>
+  </div>
+
+  <div class="section"><h2>Charts</h2><div class="charts"><div class="chart-block"><h3>Diagnostics by severity</h3><svg width="900" height="138" viewBox="0 0 900 138" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagnostics by severity"><text x="10" y="34" font-size="13" fill="#111827">warning</text><rect x="220" y="20" width="600" height="18" rx="4" ry="4" fill="#60a5fa"></rect><text x="812" y="34" font-size="13" fill="#ffffff" text-anchor="end">3</text><text x="10" y="70" font-size="13" fill="#111827">error</text><rect x="220" y="56" width="0" height="18" rx="4" ry="4" fill="#60a5fa"></rect><text x="228" y="70" font-size="13" fill="#111827" text-anchor="start">0</text><text x="10" y="106" font-size="13" fill="#111827">note</text><rect x="220" y="92" width="600" height="18" rx="4" ry="4" fill="#60a5fa"></rect><text x="812" y="106" font-size="13" fill="#ffffff" text-anchor="end">3</text></svg></div><div class="chart-block"><h3>Top checks</h3><svg width="900" height="138" viewBox="0 0 900 138" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Top checks"><text x="10" y="34" font-size="13" fill="#111827">clang-analyzer-core.CallAndMessage</text><rect x="220" y="20" width="600" height="18" rx="4" ry="4" fill="#60a5fa"></rect><text x="812" y="34" font-size="13" fill="#ffffff" text-anchor="end">1</text><text x="10" y="70" font-size="13" fill="#111827">clang-diagnostic-array-bounds</text><rect x="220" y="56" width="600" height="18" rx="4" ry="4" fill="#60a5fa"></rect><text x="812" y="70" font-size="13" fill="#ffffff" text-anchor="end">1</text><text x="10" y="106" font-size="13" fill="#111827">clang-diagnostic-newline-eof</text><rect x="220" y="92" width="600" height="18" rx="4" ry="4" fill="#60a5fa"></rect><text x="812" y="106" font-size="13" fill="#ffffff" text-anchor="end">1</text></svg></div><div class="chart-block"><h3>Top files</h3><svg width="900" height="66" viewBox="0 0 900 66" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Top files"><text x="10" y="34" font-size="13" fill="#111827">src/main.c</text><rect x="220" y="20" width="600" height="18" rx="4" ry="4" fill="#60a5fa"></rect><text x="812" y="34" font-size="13" fill="#ffffff" text-anchor="end">6</text></svg></div></div></div>
+
+  <div class="filters">
+    <input id="fileFilter" type="text" placeholder="Filter by file">
+    <input id="checkFilter" type="text" placeholder="Filter by check">
+    <select id="severityFilter">
+      <option value="">All severities</option>
+      <option value="warning">warning</option>
+      <option value="error">error</option>
+      <option value="note">note</option>
+    </select>
+  </div>
+
+  <div class="section">
+    <h2>Diagnostics</h2>
+    <table id="diagTable">
+      <thead>
+        <tr>
+          <th>Location</th>
+          <th>Line</th>
+          <th>Column</th>
+          <th>Severity</th>
+          <th>Check</th>
+          <th>File</th>
+          <th>Message</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="group-row"><td colspan="7"><strong>src/main.c</strong></td></tr>
+<tr class="diag-row sev-note" data-file="src/main.c" data-check="-" data-severity="note"><td><a href="vscode://file//home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c:9:5">src/main.c:9</a></td><td>9</td><td>5</td><td>note</td><td>-</td><td>main.c</td><td><div>array &#x27;values&#x27; declared here</div><pre>    9 |     int values[2] = {10, 20};
+      |     ^</pre></td></tr>
+<tr class="diag-row sev-note" data-file="src/main.c" data-check="-" data-severity="note"><td><a href="vscode://file//home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c:13:5">src/main.c:13</a></td><td>13</td><td>5</td><td>note</td><td>-</td><td>main.c</td><td><div>2nd function call argument is an uninitialized value</div><pre>   13 |     printf(&quot;Out of bounds value: %d\n&quot;, values[5]);
+      |     ^                                   ~~~~~~~~~</pre></td></tr>
+<tr class="diag-row sev-warning" data-file="src/main.c" data-check="clang-analyzer-core.callandmessage" data-severity="warning"><td><a href="vscode://file//home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c:13:5">src/main.c:13</a></td><td>13</td><td>5</td><td>warning</td><td>clang-analyzer-core.CallAndMessage</td><td>main.c</td><td><div>2nd function call argument is an uninitialized value</div><pre>   13 |     printf(&quot;Out of bounds value: %d\n&quot;, values[5]);
+      |     ^</pre></td></tr>
+<tr class="diag-row sev-warning" data-file="src/main.c" data-check="clang-diagnostic-array-bounds" data-severity="warning"><td><a href="vscode://file//home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c:13:41">src/main.c:13</a></td><td>13</td><td>41</td><td>warning</td><td>clang-diagnostic-array-bounds</td><td>main.c</td><td><div>array index 5 is past the end of the array (that has type &#x27;int[2]&#x27;)</div><pre>   13 |     printf(&quot;Out of bounds value: %d\n&quot;, values[5]);
+      |                                         ^      ~</pre></td></tr>
+<tr class="diag-row sev-note" data-file="src/main.c" data-check="-" data-severity="note"><td><a href="vscode://file//home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c:37:5">src/main.c:37</a></td><td>37</td><td>5</td><td>note</td><td>-</td><td>main.c</td><td><div>Calling &#x27;demo_buggy_logic&#x27;</div><pre>   37 |     demo_buggy_logic(0);
+      |     ^~~~~~~~~~~~~~~~~~~</pre></td></tr>
+<tr class="diag-row sev-warning" data-file="src/main.c" data-check="clang-diagnostic-newline-eof" data-severity="warning"><td><a href="vscode://file//home/alejandro/repos/code-analysis-toolkit/projectExample/src/main.c:47:2">src/main.c:47</a></td><td>47</td><td>2</td><td>warning</td><td>clang-diagnostic-newline-eof</td><td>main.c</td><td><div>no newline at end of file</div><pre>   47 | }
+      |  ^</pre></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Summary by check</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Check</th>
+          <th>Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>clang-analyzer-core.CallAndMessage</td><td>1</td></tr>
+<tr><td>clang-diagnostic-array-bounds</td><td>1</td></tr>
+<tr><td>clang-diagnostic-newline-eof</td><td>1</td></tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<script>
+const fileFilter = document.getElementById('fileFilter');
+const checkFilter = document.getElementById('checkFilter');
+const severityFilter = document.getElementById('severityFilter');
+const rows = Array.from(document.querySelectorAll('tr.diag-row'));
+
+function applyFilters() {
+    const fileVal = fileFilter.value.toLowerCase();
+    const checkVal = checkFilter.value.toLowerCase();
+    const severityVal = severityFilter.value.toLowerCase();
+
+    rows.forEach((row) => {
+        const file = row.dataset.file || '';
+        const check = row.dataset.check || '';
+        const severity = row.dataset.severity || '';
+
+        const visible =
+            file.includes(fileVal) &&
+            check.includes(checkVal) &&
+            (!severityVal || severity === severityVal);
+
+        row.style.display = visible ? '' : 'none';
+    });
+}
+
+fileFilter.addEventListener('input', applyFilters);
+checkFilter.addEventListener('input', applyFilters);
+severityFilter.addEventListener('change', applyFilters);
+</script>
+</body>
+</html>
