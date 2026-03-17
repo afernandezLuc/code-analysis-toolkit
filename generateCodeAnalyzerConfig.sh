@@ -9,7 +9,7 @@ fi
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(realpath "$1")"
 CONFIG_OUT="${2:-$PROJECT_ROOT/codeAnalyzerConfig.json}"
-ADDONS_DIR_ABS="$SCRIPT_DIR/codeAnalysysAddons"
+ADDONS_DIR_ABS="$SCRIPT_DIR/codeAnalysisAddons"
 
 if [[ ! -d "$PROJECT_ROOT" ]]; then
     echo "Error: project root $PROJECT_ROOT does not exist or is not a directory"
@@ -91,14 +91,14 @@ fi
 
 CPP_EXCLUDE_DIRS=(
     ".venv"
-    "codeAnalysysAddons"
+    "codeAnalysisAddons"
     "code_analysis_result"
     "build"
 )
 
 CLANG_TIDY_EXCLUDE_DIRS=(
     ".venv"
-    "codeAnalysysAddons"
+    "codeAnalysisAddons"
     "code_analysis_result"
     "build"
 )

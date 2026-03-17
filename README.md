@@ -19,7 +19,7 @@ The toolkit is designed for projects that already have, or can generate, a `comp
 - `staticCodeAnalysis.sh`: main analysis pipeline
 - `generateCodeAnalyzerConfig.sh`: generates a JSON configuration for a target project
 - `installRequisites.sh`: installs the required Ubuntu/WSL dependencies
-- `codeAnalysysAddons/`: helper assets and Python report generators
+- `codeAnalysisAddons/`: helper assets and Python report generators
 - `projectExample/`: sample C project used to validate the workflow, documented in `projectExample/README.md`
 
 ## Requirements
@@ -133,7 +133,7 @@ This project orchestrates well-known analysis tools such as `cppcheck`, `clang-t
 
 The repository also includes third-party MISRA material:
 
-- `codeAnalysysAddons/misra_rules.txt` contains `MISRA C:2023 Guideline Headlines for CPPcheck`.
+- `codeAnalysisAddons/misra_rules.txt` contains `MISRA C:2023 Guideline Headlines for CPPcheck`.
 - Copyright `(C) 2023 The MISRA Consortium Limited ("MISRA"), all rights reserved`.
 - The file header states that it is provided under the `Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International` license:
   `https://creativecommons.org/licenses/by-nc-nd/4.0/`

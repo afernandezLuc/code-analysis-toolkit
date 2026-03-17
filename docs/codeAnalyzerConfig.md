@@ -30,14 +30,14 @@ A freshly generated file usually looks similar to this:
   "report_dir": "code_analysis_result",
   "suppressions": ".cppcheck-suppress",
   "cppcheck_suppressions_entries": [],
-  "cppcheck_exclude_dirs": [".venv", "codeAnalysysAddons", "code_analysis_result", "build"],
+  "cppcheck_exclude_dirs": [".venv", "codeAnalysisAddons", "code_analysis_result", "build"],
   "clang_tidy_report": "code_analysis_result/clang_tidy_summary.txt",
-  "clang_tidy_exclude_dirs": [".venv", "codeAnalysysAddons", "code_analysis_result", "build"],
+  "clang_tidy_exclude_dirs": [".venv", "codeAnalysisAddons", "code_analysis_result", "build"],
   "clang_analyzer_enabled": true,
   "clang_analyzer_build_cmd": "cmake --build \"build\" --clean-first",
   "clang_analyzer_output_dir": "code_analysis_result/scan-build",
   "summary_pdf": "code_analysis_result/analysis_summary.pdf",
-  "addons_dir": "/absolute/path/to/codeAnalysysAddons",
+  "addons_dir": "/absolute/path/to/codeAnalysisAddons",
   "misra_rules_url": "https://gitlab.com/MISRA/MISRA-C/MISRA-C-2012/-/raw/main/tools/misra_c_2023__headlines_for_cppcheck.txt",
   "misra_rules_filename": "misra_rules.txt",
   "extra_defines": ["-D__GNUC__"],
@@ -163,7 +163,7 @@ The analyzer supports a few advanced optional keys that are not emitted by `gene
 - Type: `string`
 - Required: Yes
 - Used for: Directory that stores helper scripts and assets such as `generate_summary_pdf.py`, `clang_tidy_to_html.py`, and the MISRA rules file.
-- Configure it: Point it to the repository `codeAnalysysAddons` directory unless you have moved those helper files elsewhere.
+- Configure it: Point it to the repository `codeAnalysisAddons` directory unless you have moved those helper files elsewhere.
 
 ### `misra_rules_url`
 

@@ -25,7 +25,7 @@ Third-Party Material Notice
 This repository includes third-party material that is not covered by the MIT
 License above.
 
-- `codeAnalysysAddons/misra_rules.txt`
+- `codeAnalysisAddons/misra_rules.txt`
   Contains "MISRA C:2023 Guideline Headlines for CPPcheck".
   Copyright (C) 2023 The MISRA Consortium Limited ("MISRA"), all rights reserved.
   Provided under the Creative Commons Attribution-NonCommercial-NoDerivatives
